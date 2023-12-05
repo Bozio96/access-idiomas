@@ -22,6 +22,7 @@ export default function Banner(){
             <Box sx={{display: {xs:'none', sm: 'block'}}} className="imagenConversacion">
                 <img src="https://res.cloudinary.com/dnfil5isx/image/upload/v1701801127/imagen_conversacion_rbsd2d.png" alt="imagenConversacion" />
             </Box>
+            <p>HOla</p>
         </div>
     )
 }
