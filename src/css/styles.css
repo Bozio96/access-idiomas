@@ -1,48 +1,200 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
+}
+/*----------------------------------------------------HEADER------------------------------------------------------------*/
+.logoHeader {
+  height: 80px;
 }
 
-.logoHeader{
-    height: 80px;
+/*----------------------------------------------------BANNER------------------------------------------------------------*/
+.banner {
+  height: 400px;
+  background: linear-gradient(to bottom, #312783, #ffffff);
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cardPrincipal {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+  width: 45vw;
+  padding: 20px;
+  margin: 50px;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 10px 10px 5px rgb(54, 54, 54);
+}
+
+.cardPrincipal h1 {
+  color: #312783;
+  font-size: 30px;
+}
+
+.formularioCorreo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formularioCorreo input{
+  height: 50px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+.imagenConversacion img {
+  width: 50vw;
+}
+/* ---------------------CARDS----------------- */
+.cardsContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card{
+  width: 95vw;
+  margin: 15px 0px;
+}
+
+.itemListCards li{
+  list-style-image: url();
 }
 
 
 
-.banner{
-    position: absolute;
-    top: 80px;
-    height: 400px;
-    background: linear-gradient(to bottom, #312783, #ffffff );
-    width: 100vw;
-    display: flex;
-    padding: 20px;
-    justify-content: space-evenly;
-    align-items: center;
+/*----------------------------------------------------EXAMENES----------------------------------------------------------*/
+
+/*----------------------------------------------------CURSOS------------------------------------------------------------*/
+
+
+/*----------------------------------------------------COWORKING---------------------------------------------------------*/
+
+/*----------------------------------------------------SOBRE NOSOTROS----------------------------------------------------*/
+
+
+/*----------------------------------------------------CONTACTO----------------------------------------------------------*/
+
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.cardPrincipal{
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 20px;
-    border-radius: 20px;
-    border: 1px solid black;
-    box-shadow: 10px 10px 5px rgb(54, 54, 54);
-    height: 300px;
+.formulario input{
+  border-radius: 2px;
+  background-color: #312783;
 }
 
-.cardPrincipal h1{
-    color: #312783;
-    font-size: 30px;
+.formulario label{
+  color: #f88078;
 }
 
-.formularioCorreo{
-    display: flex;
-    flex-direction: column;
+/*----------------------------------------------------FOOTER------------------------------------------------------------*/
+.listaIframe li{
+  list-style-type: none;
+}
+
+.iframe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  width: 90vw;
+  border-left: #ffa500 solid 5px;
+}
+
+
+
+.footer {
+  background-color: #ffa500;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "accessLogo instagramLink"
+    "accessLogo facebookLink"
+    "desusWebLabel desusWebLabel";
+}
+.accessLogo {
+  grid-area: accessLogo;
+  justify-self: end;
+}
+
+.accessLogo img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.instagramLink {
+  grid-area: instagramLink;
+}
+
+.instagramLink img{
+  border-radius: 15px;
+  margin-left: 10px;
+}
+
+.instagramLink img:hover{
+  background-image: linear-gradient(to left, #ffb936, #ffe0a8);
+}
+
+.instagramLink a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  width: 10px;
+}
+.facebookLink {
+  grid-area: facebookLink;
+}
+
+.facebookLink img{
+  border-radius: 15px;
+  margin-left: 10px;
+}
+
+.facebookLink img:hover{
+  background-image: linear-gradient(to left, #ffb936, #ffe0a8);
+}
+
+.facebookLink a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  width: 10px;
+}
+.desusWebLabel {
+  grid-area: desusWebLabel;
+  justify-self: center;
+  align-self: center;
+}
+
+/*----------------------------------------------------MEDIA QUERIES-----------------------------------------------------*/
+/*----------------------------------------------------TABLET------------------------------------------------------------*/
+@media (min-width: 768px){
+  .formularioCorreo {
+    flex-direction: row;
     justify-content: center;
-}
+    align-items: center;
+  }
+  .formularioCorreo input{
+    margin-right: 20px;
+  }
 
-.imagenConversacion img{
-    height: 400px;
+  .formularioCorreo .botonComenzar{
+    width: 70%;
+  }
 }

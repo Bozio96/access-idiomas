@@ -4,13 +4,13 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 export default function Banner(){
     return (
-        <div className="banner">
+        <div className="banner" id='inicio'>
             <Box className="cardPrincipal">
                 <h1>En Access, aprendemos idiomas</h1>
                 <p>Dejanos tu correo electrónico y te contactaremos en breve</p>
                 <form className="formularioCorreo" action="#">
                     <input type="email" placeholder="Correo electrónico"/>
-                    <Button
+                    <Button className="botonComenzar"
                         color='primary'
                         variant="contained"
                         endIcon={<ArrowForwardIcon/>}

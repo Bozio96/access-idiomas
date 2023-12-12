@@ -2,14 +2,14 @@ import { Box, Divider, List, ListItem, ListItemButton, ListItemText } from "@mui
 
 export default function NavDrawer({navLinks}){
     return(
-        <Box>
+        <Box sx={{backgroundColor:'#312783'}}>
             <nav>
                 <List>
                     {navLinks.map((item)=>(
                         <>
                             <ListItem key={item.title}>
                                 <ListItemButton component='a' href={item.path}>
-                                    <ListItemText>{item.title}</ListItemText>
+                                    <ListItemText sx={{color: '#ffffff'}}>{item.title}</ListItemText>
                                 </ListItemButton>
                             </ListItem>
                             <Divider/>

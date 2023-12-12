@@ -7,23 +7,23 @@ export default function NavBar(){
     const navLinks = [
         {
             title: 'Exámenes Internacionales',
-            path: '#'
+            path: '#examenesInternacionales'
         },
         {
             title: 'Cursos de Inglés',
-            path: '#'
+            path: '#cursosDeIngles'
         },
         {
             title: 'Coworking',
-            path: '#'
+            path: '#coworking'
         },
         {
             title: 'Sobre Nosotros',
-            path: '#'
+            path: '#sobreNosotros'
         },
         {
             title: 'Contactanos',
-            path: '#'
+            path: '#contactanos'
         },
     ]
 
@@ -31,7 +31,7 @@ export default function NavBar(){
     
     return (
         <>
-            <AppBar position="fixed">
+            <AppBar position="sticky">
                 <Toolbar sx={{justifyContent:'space-between'}}>
                     <IconButton sx={{display: {xs:'flex', sm:'none'}}} onClick={()=>setSide(true)}>
                         <MenuIcon/>
